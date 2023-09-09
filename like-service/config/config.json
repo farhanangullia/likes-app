@@ -1,7 +1,7 @@
 {
-  "baseApiPath": "/api/like",
+  "baseApiPath": "/like",
   "apiListenAddr": ":9080",
-  "dbHost": "postgres",
+  "dbHost": "likes-postgres",
   "dbPort": "5432",
   "dbUser": "postgres",
   "dbName": "postgres",

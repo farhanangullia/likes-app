@@ -90,13 +90,13 @@ func main() {
 	shutdown := initProviderProm(serviceName, serviceNamespace)
 	defer shutdown()
 
-	locker, err := utils.NewDatabase(lockAddr) // mock
+	locker, err := utils.NewDatabase(lockAddr)
 	if err != nil {
 		log.Fatalf("Failed to connect to redis lock: %s", err.Error())
 	}
 	log.Printf("Connected to redis...")
 
-	database, err := repository.NewDatabase(dbHost, dbUser, dbPassword, dbName, dbPort) // mock
+	database, err := repository.NewDatabase(dbHost, dbUser, dbPassword, dbName, dbPort)
 	if err != nil {
 		log.Fatalf("Failed to connect to postgres: %s", err.Error())
 	}

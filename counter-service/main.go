@@ -84,7 +84,7 @@ func main() {
 	shutdown := initProviderProm(serviceName, serviceNamespace)
 	defer shutdown()
 
-	database, err := repository.NewDatabase(redisAddr) // mock
+	database, err := repository.NewDatabase(redisAddr)
 	if err != nil {
 		log.Fatalf("Failed to connect to redis: %s", err.Error())
 	}
