@@ -6,5 +6,5 @@
   "dbUser": "postgres",
   "dbName": "postgres",
   "dbPassword": "postgres",
-  "lockAddr": "likes-redis-lock:6380"
+  "lockAddr": "likes-redis-lock:6379"
 }
